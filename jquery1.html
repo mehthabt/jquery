@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(()=>{
+$("button").click(()=>{
+    $("h1").addClass("blink");
+});
+});
+
+      </script>
+</head>
+<body>
+    <h1>BITITUDE</h1>
+    <button>click here to blink</button>
+</body>        
+</html>
+<style>
+.blink {
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      opacity: 0; 
+    }
+  
+    to {
+        opacity: 10;
+    }
+  }</style>

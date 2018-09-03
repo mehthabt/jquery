@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(()=>{
+$("button").click(()=>{
+    $("p:last").addClass("back")
+    ;
+});
+});
+
+      </script>
+</head>
+<body>
+    <p>apple</p>
+    <p>orange</p>
+    <p>pineapple</p>
+    <button>click here to change last elements color</button>
+</body>        
+</html>
+<style>.back{
+    background-color: yellow;<style>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(()=>{
+$("input").focusin(function () {
+  $(this).css("background","green").fadeIn('400'); 
+    
+});
+$("input").focusout(function () {
+  $(this).css("background","blue").fadeIn('400'); 
+    
+});
+      
+    })</script>
+</head>
+<body>
+        <div>
+        First name: <input type="text"><br>
+        Last name: <input type="text">
+        </div>
+        </body>
+        
+        CSS Code for background color ::
+        
+        <style>
+        .focusedin {
+        background: green;
+        }
+        .focusedout {
+        background: blue;
+        }
+        </style>
+</html>

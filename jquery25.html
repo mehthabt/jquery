@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+    $(document).ready(()=>{
+$("input").click(function () {
+$(this).next(".strike").css("text-decoration","line-through");   
+});   
+});
+      </script>
+</head>
+<body>
+    <input type="checkbox" name="male" id="male"><span class="strike">MALE</span> <br>
+    <input type="checkbox" name="female" id="male"><span class="strike">FEMALE</span> <br>
+    <input type="checkbox" name="other" id="male"><span class="strike">other</span><br>
+</body>        
+</html>
+
