@@ -9,8 +9,10 @@
     <script>
     $(document).ready(()=>{
 $("button").click(()=>{
-    $("option").hide();
-    $("option").append("<option value="grape">grape</option>")
+    $(".add").hide();
+    $("option:first").after("<option selected>grape</option>")
+    $("option:first").after("<option>mango</option>")
+   
 
     
 });
@@ -20,13 +22,11 @@ $("button").click(()=>{
 </head>
 <body>
     <select>
-        <option value="apple">apple</option>
-        <option value="orange">orange</option>
-        <option value="pineapple">pineapple</option>
+        <option value="apple" class="add">apple</option>
+        <option value="orange" class="add">orange</option>
+        <option value="pineapple" class="add">pineapple</option>
+      
     </select>
     <button>click to delete all option</button>
 </body>        
 </html>
-<style>.back{
-    background-image: url("back2.jpg");
-    background-size: cover;</style>
